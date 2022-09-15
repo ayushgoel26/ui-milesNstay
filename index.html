@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="mns.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>      
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />  
+    <title>milesNstay</title>
+    <style>
+        .br0, 
+.gj-datepicker-bootstrap [role=right-icon] button,
+.form-control { 
+    border-radius: 0 !important
+}
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container-fluid container bg-primary display-1">
+        1st section
+    </div> -->
+    <div class="jumbotron" style="background: url(img/silhouette_travel_hill_187424_3840x2400.jpg) no-repeat center fixed;height: 100vh;background-size: cover;">
+        
+        <nav class="bg-primaryX text-lightX navbar navbar-expand-xl navbar-dark  navbar-togglable  fixed-top">
+
+            <div class="container" >
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">                  
+                    <img src="img/logo1.jpeg" alt="A black, brown, and white dog wearing a kerchief" style="max-height:150px;max-width:150px;">
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active mx-4">
+                        <a class="nav-link" href="#">Become a host</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Sign up</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>                                                    
+                    </ul>
+
+
+                </div> <!-- / .navbar-collapse -->
+
+            </div> <!-- / .container -->
+        </nav>
+        <!-- </div> -->
+        <div class="card" style="width: 35rem;padding: 10px;">
+            <div class="card-body">
+            <h1 class="h3 mb-3" style="text-align: center;">Make a Reservation on milesNstay</h1>
+            <form>
+                <div class="row ">
+                    <label class="mb-0" for="locationInput mb-0 mt-5">WHERE</label>
+                    <input type="email" class="form-control w-100 br0" id="locationInput" aria-describedby="locationInputHelp" placeholder="Anywhere">
+                    <small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired destination.</small>                          
+                  </div>
+                </div>
+                <div class="row px-3">
+                    <div class="col-sm-6 px-0">
+                        Start Date: <input class="br0" id="startDate" />    
+                    </div>
+                    <div class="col-sm-6 px-0 br0">
+                        End Date: <input  class="br0" id="endDate" />        
+                    </div>
+                </div>
+                 
+                <div class="row px-3">
+                    <div class="col-sm-6 px-0 br0">
+                        <div class="form-group">
+                            <label class="mb-0" for="exampleFormControlSelect1">ADULTS</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>1 adult</option>
+                              <option>2 adults</option>
+                              <option>3 adults</option>
+                              <option>4 adults</option>
+                              <option>5 adults</option>
+                              <option>6 adults</option>
+                              <option>7 adults</option>
+                              <option>8 adults</option>
+                              <option>9 adults</option>
+                              <option>10 adults</option>
+                              <option>11 adults</option>
+                              <option>12 adults</option>
+                              <option>13 adults</option>
+                              <option>14 adults</option>
+                              <option>15 adults</option>
+                              <option>16 adults</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 px-0 br0">
+                          <div class="form-group">
+                            <label class="mb-0" for="exampleFormControlSelect2">CHILDREN</label>
+                            <select class="form-control" id="exampleFormControlSelect2">
+                              <option>0 children</option>
+                              <option>1 child</option>
+                              <option>2 children</option>
+                              <option>3 children</option>
+                              <option>4 children</option>
+                              <option>5 children</option>
+                            </select>
+                          </div>  
+                      </div>                        
+                  </div> 
+              </form>
+              <a href="#" class="btn btn-danger btn-block" style="background-color: #f58b5d;">Search</a>
+            </div>
+
+            </div>
+          </div>
+
+    </div>
+
+    <!-- <div class="container-fluid container bg-secondary display-1"> -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="card">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="img/braziliya-santa-katarina.jpeg" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="img/logo.jpeg" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="img/logo1.jpeg" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <!-- </div> -->
+    <div class="container-fluid container bg-success display-1">
+        3rd section
+    </div>
+    <div class="container-fluid container bg-warning display-1">
+        4th section
+    </div>
+    <div class="container-fluid container bg-danger display-1">
+        5th section
+    </div>
+    <div class="container-fluid container bg-info display-1">
+        6th section
+    </div>
+    <script>
+        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+        $('#startDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            iconsLibrary: 'fontawesome',
+            minDate: today,
+            maxDate: function () {
+                return $('#endDate').val();
+            }
+        });
+        $('#endDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            iconsLibrary: 'fontawesome',
+            minDate: function () {
+                return $('#startDate').val();
+            }
+        });
+    </script>  
+  </body>
+</html>
