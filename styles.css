@@ -37,3 +37,14 @@
 .logo-div{
   opacity: 100%;
 }
+
+.card {
+  width: 90%;
+  padding: 10px;
+}
+
+@media (min-width: 991px) {
+  .card {
+    width: 30%
+  }
+}
