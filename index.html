@@ -65,7 +65,7 @@
 	</nav>
 
 	<!-- Welcome Screen -->
-	<div class="jumbotron welcome-div">
+	<div class="jumbotron jumbotron-fluid" id="welcome-div">
 		<div class="card" style="width: 35rem;padding: 10px;">
 			<div class="card-body">
 				<h1 class="h3 mb-3" style="text-align: center;">Make a Reservation</h1>
@@ -79,10 +79,10 @@
 					</div>
 					<div class="row px-3">
 						<div class="col-sm-6 px-0">
-							Start Date: <input class="br0" id="startDate" />
+							Start Date: <input class="form-control" type="date" class="br0" id="startDate" />
 						</div>
-						<div class="col-sm-6 px-0 br0">
-							End Date: <input class="br0" id="endDate" />
+						<div class="col-sm-6 pr-0 br0">
+							End Date: <input class="form-control" type="date" class="br0" id="endDate" />
 						</div>
 					</div>
 					<div class="row px-3">
@@ -109,7 +109,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-sm-6 px-0 br0">
+						<div class="col-sm-6 pr-0 br0">
 							<div class="form-group">
 								<label class="mb-0" for="exampleFormControlSelect2">CHILDREN</label>
 								<select class="form-control" id="exampleFormControlSelect2">
@@ -202,7 +202,7 @@
 			}
 		});
 	</script> -->
-    <footer class="bg-dark text-lg-start">
+    <footer class="bg-dark text-lg-start container-fluid">
         <div class="row">
             <div class="col-md-4 text-left">
                 <span class="text-light"> © 2020 Copyright: milesNstay</span>
