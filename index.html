@@ -13,6 +13,12 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<style>
+			.navbar-fixed-top  {
+			top:-70px;
+			opacity:0;
+			}
+			</style>
 
 	<!-- Javacript Files  -->
 	<script type="text/javascript" src="mns.js"></script>
@@ -29,43 +35,101 @@
 </head>
 
 <body>
-	<!-- Navigation -->
-	<nav class=" bg-dark navbar navbar-expand-md navbar-dark navbar-togglable fixed-top">
-		<!-- Logo -->
-		<div class="logo-div col-md-1">
-			<a class="navbar-brand" href="index.html">
-				<img src="img/logo.png" alt="" width="100px">
-			</a>
-		</div>
+	<div id="navbarsearch">
+		<form class="search"> 
+			<div class="logo-div col-md-1">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo.png" alt="" width="100px">
+				</a>
+			</div>
+            <div class="search-inputs">
+              <label for="location"> 
+                <div class="label">Location</div>
+                <input name="location" id="location" placeholder="Where are you going?"/>
+              </label>
+              
+            </div>
+            <div class="search-inputs">
+              <label for="check-in"> 
+                <div class="label">Check in</div>
+                <!-- <input name="check-in" id="check-in" placeholder="Add dates"/> -->
+				<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates"/>
+              </label>
+            </div>
+            <div class="search-inputs">
+              <label for="check-out"> 
+                <div class="label">Check out</div>
+                <!-- <input name="check-out" id="check-out" placeholder="Add dates"/> -->
+				<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates"/>
+              </label>
+            </div>
+            <div class="search-inputs">
+              <label for="guests"> 
+                <div class="label">Guests</div>
+				<select class="form-control" id="exampleFormControlSelect1">
+					<option>1 adult</option>
+					<option>2 adults</option>
+					<option>3 adults</option>
+					<option>4 adults</option>
+					<option>5 adults</option>
+					<option>6 adults</option>
+					<option>7 adults</option>
+					<option>8 adults</option>
+					<option>9 adults</option>
+					<option>10 adults</option>
+					<option>11 adults</option>
+					<option>12 adults</option>
+					<option>13 adults</option>
+					<option>14 adults</option>
+					<option>15 adults</option>
+					<option>16 adults</option>
+				</select>
+              </label>
+            </div>
+            <div class="search-button">
+              <button><i class="fas fa-search fa-xs"></i></button>
+            </div>
+        </form>
+	</div>
 
-		<!-- Toggler -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<!-- Collapse -->
-		<div class="collapse navbar-collapse bg-dark col-md-11" id="navbarCollapse">
-			<!-- Links -->
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item mx-2">
-					<a class="nav-link" href="#">Become a host</a>
-				</li>
-				<li class="nav-item mx-2">
-					<a class="nav-link" href="#">Help</a>
-				</li>
-				<li class="nav-item mx-2">
-					<a class="nav-link" href="#">Sign up</a>
-				</li>
-				<li class="nav-item mx-2">
-					<a class="nav-link" href="#">Login</a>
-				</li>
-			</ul>
-		</div> <!-- / .navbar-collapse -->
-	</nav>
+
+
 
 	<!-- Welcome Screen -->
 	<div class="jumbotron jumbotron-fluid" id="welcome-div">
+		<nav class="navbar navbar-light bg-light" style="opacity:0.9;top:0%;position:absolute;width: 100%;height: 20%;">
+			<!-- Logo -->
+			<div class="logo-div col-md-1" style="top:0%">
+				<a class="navbar-brand" href="index.html" style="top:0%" >
+					<img src="img/logo.png" alt="" width="100px" style="top:0%">
+				</a>
+			</div>
+					<!-- Toggler -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+		aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+			<!-- Collapse -->
+			<div class="collapse navbar-collapse col-md-11" id="navbarCollapse"> 
+				<!-- Links -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">Become a host</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">Help</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">Sign up</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">Login</a>
+					</li>
+				</ul>
+			</div> <!--.navbar-collapse--> 
+  </nav>
 		<div class="card">
 			<div class="card-body">
 				<h1 class="h3 mb-3" style="text-align: center;">Make a Reservation</h1>
@@ -129,79 +193,149 @@
 		</div>
 	</div>
 
-	<!-- <div class="container-fluid container bg-secondary display-1"> -->
-	<!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-inner">
-			<div class="card">
-				<img src="..." class="d-block w-100" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Card title 2</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
-					<a href="img/braziliya-santa-katarina.jpeg" class="btn btn-primary">Go somewhere</a>
+
+
+	<div class="container-fluid container py-3 mt-4">
+			<h2 class="h3">What Our Guests Have To Say</h2>
+			<div class="row mt-4">
+				<div class="col-md-3">
+					<div class="card-mb-3 border-0">
+						<img src="https://images.unsplash.com/photo-1533654793924-4fc4949fb71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="card-img-top rounded" alt="...">
+						<div class="card-body pl-0">
+							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="">
+								<div class="d-flex">
+								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+								<div class="d-flex flex-column">
+									<h5 class="mt-0 mb-1">Sara</h5>
+									<p>United States</p>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>            
 				</div>
+				<div class="col-md-3">
+					<div class="card-mb-3 border-0">
+						<img src="https://images.unsplash.com/photo-1520908695049-da13395b27a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80"	 class="card-img-top rounded" alt="...">
+						<div class="card-body pl-0">
+							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="">
+								<div class="d-flex">
+								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+								<div class="d-flex flex-column">
+									<h5 class="mt-0 mb-1">Sara</h5>
+									<p>United States</p>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>            
+				</div>
+				<div class="col-md-3">
+					<div class="card-mb-3 border-0">
+						<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
+						<div class="card-body pl-0">
+							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="">
+								<div class="d-flex">
+								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+								<div class="d-flex flex-column">
+									<h5 class="mt-0 mb-1">Sara</h5>
+									<p>United States</p>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>            
+				</div> 
+				<div class="col-md-3">
+					<div class="card-mb-3 border-0">
+						<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
+						<div class="card-body pl-0">
+							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<div class="">
+								<div class="d-flex">
+								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+								<div class="d-flex flex-column">
+									<h5 class="mt-0 mb-1">Sara</h5>
+									<p>United States</p>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>            
+				</div>            
 			</div>
-			<div class="card">
-				<img src="..." class="d-block w-100" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Card title 2</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
-					<a href="img/logo.jpeg" class="btn btn-primary">Go somewhere</a>
-				</div>
+	</div>
+
+	
+
+	<!-- Just booked near you -->
+	<div class="container-fluid container py-3 mt-4">
+		<h2 class="h3">Just Booked Near You</h2>
+		<div class="row mt-4">
+			<div class="col-md-3">
+				<div class="card-mb-3 border-0">
+					<img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
+					<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">The Joshua Tree House</h5>
+                        <p class="card-text m-0">$290/night</p>
+                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 465, Verified Host</span></p>
+
+                    </div>
+				</div>            
 			</div>
-			<div class="card">
-				<img src="..." class="d-block w-100" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Card title 2</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-						card's content.</p>
-					<a href="img/logo1.jpeg" class="btn btn-primary">Go somewhere</a>
-				</div>
+			<div class="col-md-3">
+				<div class="card-mb-3 border-0">
+					<img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" class="card-img-top rounded" alt="...">
+					<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Mushroom Dome Cabin</h5>
+                        <p class="card-text m-0">$130/night</p>
+                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 1383, Verified Host</span></p>
+
+                    </div>
+				</div>            
+			</div>
+			<div class="col-md-3">
+				<div class="card-mb-3 border-0">
+					<img src="https://images.unsplash.com/photo-1505577058444-a3dab90d4253?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" style="max-height: 100px;max-width: 100%;" class="card-img-top rounded" alt="...">
+					<p class="small text-uppercase pb-0">Earth House, Orondo</p>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Underground Hygge</h5>
+                        <p class="card-text m-0">$150/night</p>
+                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 544, Verified Host</span></p>
+
+                    </div>
+				</div>            
+			</div>
+			<div class="col-md-3">
+				<div class="card-mb-3 border-0">
+					<img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" class="card-img-top rounded" alt="...">
+					<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+                    <div class="card-body p-0">
+                        <h5 class="card-title">Mushroom Dome Cabin</h5>
+                        <p class="card-text m-0">$130/night</p>
+                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 1383, Verified Host</span></p>
+
+                    </div>
+				</div>            
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-			data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-			data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button> -->
+		<div class="row mt-2 mb-5">
+            <button class="btn text-info btn-link">
+                <span class="h6">Show all(22,000+) &gt;</span>
+            </button>
+        </div>
 	</div>
-	<!-- </div>
-	<div class="container-fluid container bg-success display-1">
-		3rd section
-	</div>
-	<div class="container-fluid container bg-warning display-1">
-		4th section
-	</div>
-	<div class="container-fluid container bg-danger display-1">
-		5th section
-	</div>
-	<div class="container-fluid container bg-info display-1">
-		6th section
-	</div> -->
-	<!-- <script>
-		var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-		$('#startDate').datepicker({
-			uiLibrary: 'bootstrap4',
-			iconsLibrary: 'fontawesome',
-			minDate: today,
-			maxDate: function () {
-				return $('#endDate').val();
-			}
-		});
-		$('#endDate').datepicker({
-			uiLibrary: 'bootstrap4',
-			iconsLibrary: 'fontawesome',
-			minDate: function () {
-				return $('#startDate').val();
-			}
-		});
-	</script> -->
+
+
     <footer class="bg-dark text-lg-start container-fluid">
         <div class="row">
             <div class="col-lg-4 text-left">
