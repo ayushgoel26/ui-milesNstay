@@ -12,7 +12,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     document.getElementById("navbarsearch").style.top = "0";
   } else {
     document.getElementById("navbarsearch").style.top = "-130px";
