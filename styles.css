@@ -59,6 +59,10 @@
 
 /* Header */
 
+#navbarmenu{
+  opacity: 50%;
+  background: rgba(255, 255, 255, 0.416) !important;
+}
 
 #navbarsearch {
   background-color: transparent; /* Black background color */
@@ -124,4 +128,17 @@
   border: none;
   background: red;
   color: white;
+}
+@media (max-width: 991px) {
+  .col-sm-6 {
+    padding-left: 0 !important;
+  }
+}
+
+footer a:hover{
+  color: #d27d22;
+}
+
+footer a{
+  color: #fff;
 }
