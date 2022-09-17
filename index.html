@@ -9,8 +9,9 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Javacript Files  -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<style>
@@ -188,147 +189,298 @@
 		</div>
 	</div>
 
-
-
-	<div class="container-fluid container py-3 mt-4">
-			<h2 class="h3">What Our Guests Have To Say</h2>
-			<div class="row mt-4">
-				<div class="col-md-3">
-					<div class="card-mb-3 border-0">
-						<img src="https://images.unsplash.com/photo-1533654793924-4fc4949fb71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="card-img-top rounded" alt="...">
-						<div class="card-body pl-0">
-							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<div class="">
-								<div class="d-flex">
-								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-								<div class="d-flex flex-column">
-									<h5 class="mt-0 mb-1">Sara</h5>
-									<p>United States</p>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>            
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-lg-2 pl-4 bg-light">
+				<h5>Price Range</h5>
+				<div class="row">
+					<div class="input-group input-group-sm mb-3 form-group">
+						<span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+						<input type="number" class="form-control" min="30" max="999" value="30" id="minPrice">
+						<span>-</span>
+						<span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+						<input type="number" class="form-control" min="31" max="1000" value="1000" id="maxPrice">
+					</div>				  
 				</div>
-				<div class="col-md-3">
-					<div class="card-mb-3 border-0">
-						<img src="https://images.unsplash.com/photo-1520908695049-da13395b27a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80"	 class="card-img-top rounded" alt="...">
-						<div class="card-body pl-0">
-							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<div class="">
-								<div class="d-flex">
-								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-								<div class="d-flex flex-column">
-									<h5 class="mt-0 mb-1">Sara</h5>
-									<p>United States</p>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>            
+				<hr class="divider">
+				<h5>Type of Place</h5>
+				<div class="row px-3">
+					<div class="form-check form-group">
+						<input class="form-check-input" type="checkbox" value="entire-place" id="flexCheckDefault">
+						<label class="form-check-label" for="flexCheckDefault">
+							Entire Place
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="private-room" id="flexCheckChecked">
+						<label class="form-check-label" for="flexCheckChecked">
+							Private Room
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="shared-room" id="flexCheckChecked">
+						<label class="form-check-label" for="flexCheckChecked">
+							Shared Room
+						</label>
+					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="card-mb-3 border-0">
-						<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
-						<div class="card-body pl-0">
-							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<div class="">
-								<div class="d-flex">
-								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-								<div class="d-flex flex-column">
-									<h5 class="mt-0 mb-1">Sara</h5>
-									<p>United States</p>
-								</div>
-								</div>
-							</div>
+				<hr class="divider">
+				<h5>Rooms and beds</h5>
+				<div class="row">
+					<div class="bedrooms">
+						<h6>Bedrooms</h6>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">1</label>
 						</div>
-					</div>            
-				</div> 
-				<div class="col-md-3">
-					<div class="card-mb-3 border-0">
-						<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
-						<div class="card-body pl-0">
-							<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<div class="">
-								<div class="d-flex">
-								<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-								<div class="d-flex flex-column">
-									<h5 class="mt-0 mb-1">Sara</h5>
-									<p>United States</p>
-								</div>
-								</div>
-							</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">2</label>
 						</div>
-					</div>            
-				</div>            
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">7</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">8+</label>
+						</div>
+					</div>
+					<div class="beds">
+						<h6>Beds</h6>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">1</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">2</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">7</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">8+</label>
+						</div>
+					</div>
+					<div class="bathrooms">
+						<h6>Bathrooms</h6>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">1</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">2</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">7</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">8+</label>
+						</div>
+					</div>
+				</div>
+				<hr class="divider">
 			</div>
+			<div class="col-md-10">
+				<div class=" row container-fluid container py-3 mt-4">
+					<h2 class="h3">What Our Guests Have To Say</h2>
+					<div class="row mt-4">
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1533654793924-4fc4949fb71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<div class="">
+										<div class="d-flex">
+										<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+										<div class="d-flex flex-column">
+											<h5 class="mt-0 mb-1">Sara</h5>
+											<p>United States</p>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>            
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1520908695049-da13395b27a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80"	 class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<div class="">
+										<div class="d-flex">
+										<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+										<div class="d-flex flex-column">
+											<h5 class="mt-0 mb-1">Sara</h5>
+											<p>United States</p>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>            
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<div class="">
+										<div class="d-flex">
+										<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+										<div class="d-flex flex-column">
+											<h5 class="mt-0 mb-1">Sara</h5>
+											<p>United States</p>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>            
+						</div> 
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="card-title text-info">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<div class="">
+										<div class="d-flex">
+										<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+										<div class="d-flex flex-column">
+											<h5 class="mt-0 mb-1">Sara</h5>
+											<p>United States</p>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>            
+						</div>            
+					</div>
+				</div>
+				<!-- Just booked near you -->
+				<div class="row container-fluid container py-3 mt-4">
+					<h2 class="h3">Just Booked Near You</h2>
+					<div class="row mt-4">
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">The Joshua Tree House</h5>
+									<p class="card-text m-0">$290/night</p>
+									<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 465, Verified Host</span></p>
+
+								</div>
+							</div>            
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">Mushroom Dome Cabin</h5>
+									<p class="card-text m-0">$130/night</p>
+									<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 1383, Verified Host</span></p>
+
+								</div>
+							</div>            
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1505577058444-a3dab90d4253?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" style="max-height: 100px;max-width: 100%;" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Earth House, Orondo</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">Underground Hygge</h5>
+									<p class="card-text m-0">$150/night</p>
+									<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 544, Verified Host</span></p>
+
+								</div>
+							</div>            
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">Mushroom Dome Cabin</h5>
+									<p class="card-text m-0">$130/night</p>
+									<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 1383, Verified Host</span></p>
+
+								</div>
+							</div>            
+						</div>
+					</div>
+					<div class="row mt-2 mb-5">
+						<button class="btn text-info btn-link">
+							<span class="h6">Show all(22,000+) &gt;</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	
 
-	<!-- Just booked near you -->
-	<div class="container-fluid container py-3 mt-4">
-		<h2 class="h3">Just Booked Near You</h2>
-		<div class="row mt-4">
-			<div class="col-md-3">
-				<div class="card-mb-3 border-0">
-					<img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top rounded" alt="...">
-					<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
-                    <div class="card-body p-0">
-                        <h5 class="card-title">The Joshua Tree House</h5>
-                        <p class="card-text m-0">$290/night</p>
-                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 465, Verified Host</span></p>
+	
 
-                    </div>
-				</div>            
-			</div>
-			<div class="col-md-3">
-				<div class="card-mb-3 border-0">
-					<img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" class="card-img-top rounded" alt="...">
-					<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
-                    <div class="card-body p-0">
-                        <h5 class="card-title">Mushroom Dome Cabin</h5>
-                        <p class="card-text m-0">$130/night</p>
-                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 1383, Verified Host</span></p>
-
-                    </div>
-				</div>            
-			</div>
-			<div class="col-md-3">
-				<div class="card-mb-3 border-0">
-					<img src="https://images.unsplash.com/photo-1505577058444-a3dab90d4253?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" style="max-height: 100px;max-width: 100%;" class="card-img-top rounded" alt="...">
-					<p class="small text-uppercase pb-0">Earth House, Orondo</p>
-                    <div class="card-body p-0">
-                        <h5 class="card-title">Underground Hygge</h5>
-                        <p class="card-text m-0">$150/night</p>
-                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 544, Verified Host</span></p>
-
-                    </div>
-				</div>            
-			</div>
-			<div class="col-md-3">
-				<div class="card-mb-3 border-0">
-					<img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" class="card-img-top rounded" alt="...">
-					<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
-                    <div class="card-body p-0">
-                        <h5 class="card-title">Mushroom Dome Cabin</h5>
-                        <p class="card-text m-0">$130/night</p>
-                        <p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span class="text-secondary"> 1383, Verified Host</span></p>
-
-                    </div>
-				</div>            
-			</div>
-		</div>
-		<div class="row mt-2 mb-5">
-            <button class="btn text-info btn-link">
-                <span class="h6">Show all(22,000+) &gt;</span>
-            </button>
-        </div>
-	</div>
+	
 	<!-- <script>
 		var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
 		$('#startDate').datepicker({
