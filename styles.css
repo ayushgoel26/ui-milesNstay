@@ -20,6 +20,21 @@
 
 }
 
+.orange{
+  color:#f58b5d;
+
+}
+
+.rating 
+ {
+    width: 100%;
+    height: 90px;
+    white-space: nowrap;
+    
+}
+
+
+
 .br0,
 .gj-datepicker-bootstrap [role=right-icon] button,
 .form-control {
@@ -37,6 +52,10 @@
 
 .logo-div{
   opacity: 100%;
+  width:75%;
+  padding:0px;
+  margin:0px;
+
 }
 
 .card {
@@ -63,7 +82,7 @@
 /* Header */
 
 #navbarmenu{
-  background: rgba(255, 255, 255, 0.416) !important;
+  background: rgba(255, 255, 255, 1 ) !important;
 }
 
 .selectWrapper{
