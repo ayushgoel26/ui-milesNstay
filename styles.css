@@ -67,8 +67,7 @@
 }
 
 .card-img-top {
-  max-height:20em;
-  min-height:15em;
+  height:15em;
   object-fit: cover
 }
 
