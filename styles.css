@@ -223,11 +223,12 @@ footer a{
 /*Carousel City*/
 .carousel-control-prev, .carousel-control-next{
   background-color: black;
-  width: 6vh !important;
+  width: 6vh;
   height: 6vh;
   border-radius: 50%;
-  top: 50% !important;
+  top: 50%;
   transform: translateY(-50%);
+  z-index: 0;
 }
 
 .card-img{
@@ -235,6 +236,7 @@ footer a{
   height: 15em;
   display: flex;
   justify-content: center;
+  margin:0 0 0.5em
 }
 
 .carousel-inner{
@@ -243,8 +245,6 @@ footer a{
 
 .card-city{
   margin: 0 .5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border: none;
 }
 
 .card-city a:link {

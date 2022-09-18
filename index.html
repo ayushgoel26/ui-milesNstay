@@ -125,13 +125,17 @@
 			</div>
 			
 		</form>
-		<div>
-		<!-- Toggler -->
-		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
-		aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-		</button>
-		</div>
+		<div class="dropdown show">
+			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Dropdown link
+			</a>
+		  
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			  <a class="dropdown-item" href="#">Action</a>
+			  <a class="dropdown-item" href="#">Another action</a>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		  </div>
 	</div>
 
 
@@ -409,15 +413,15 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 			</div>
 			<div class="col-md-9 col-lg-10">
 				<div class="row container-fluid py-3 mt-4" style="margin-top:px;padding-top: 0px;">
-					<h2 class="font-weight-light">City</h2>
-					<div class="row mx-auto my-auto justify-content-center">
+					<h2 class="h3">City</h2>
+					<div class="row mt-4 justify-content-center">
 						<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
 									<div class="col-md-3">
-										<div class="card-city">
+										<div class="card-city border-0">
 											<div class="card-img">
-												<img src="img/austin.jpeg" class="img-fluid" alt="1">
+												<img src="img/austin.jpeg" class="img-fluid card-img-top rounded" alt="Austin">
 											</div>
 											<div class="card-body">
 												<a href="#">
@@ -429,9 +433,9 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 								</div>
 								<div class="carousel-item">
 									<div class="col-md-3">
-										<div class="card-city">
+										<div class="card-city border-0">
 											<div class="card-img">
-												<img src="img/chicago.jpeg" class="img-fluid">
+												<img src="img/chicago.jpeg" class="img-fluid card-img-top rounded">
 											</div>
 											<div class="card-body">
 												<a href="#">
@@ -443,9 +447,9 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 								</div>
 								<div class="carousel-item">
 									<div class="col-md-3">
-										<div class="card-city">
+										<div class="card-city border-0">
 											<div class="card-img">
-												<img src="img/denver.jpeg" class="img-fluid">
+												<img src="img/denver.jpeg" class="img-fluid card-img-top rounded">
 											</div>
 											<div class="card-body">
 												<a href="#">
@@ -457,9 +461,9 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 								</div>
 								<div class="carousel-item">
 									<div class="col-md-3">
-										<div class="card-city">
+										<div class="card-city border-0">
 											<div class="card-img">
-												<img src="img/NewYork.jpeg" class="img-fluid">
+												<img src="img/NewYork.jpeg" class="img-fluid card-img-top rounded">
 											</div>
 											<div class="card-body">
 												<a href="#">
@@ -471,9 +475,9 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 								</div>
 								<div class="carousel-item">
 									<div class="col-md-3">
-										<div class="card-city">
+										<div class="card-city border-0">
 											<div class="card-img">
-												<img src="img/SanFrancisco.webp" class="img-fluid">
+												<img src="img/SanFrancisco.webp" class="img-fluid card-img-top rounded">
 											</div>
 											<div class="card-body">
 												<a href="#">
@@ -485,9 +489,9 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 								</div>
 								<div class="carousel-item">
 									<div class="col-md-3">
-										<div class="card-city">
+										<div class="card-city border-0">
 											<div class="card-img">
-												<img src="img/seattle.jpeg" class="img-fluid">
+												<img src="img/seattle.jpeg" class="img-fluid card-img-top rounded">
 											</div>
 											<div class="card-body">
 												<a href="#">
