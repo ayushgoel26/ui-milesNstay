@@ -21,7 +21,6 @@
 		}
 
 		@media (min-width: 768px) {
-
 			.carousel-inner .carousel-item-end.active,
 			.carousel-inner .carousel-item-next {
 				transform: translateX(25%);
@@ -55,72 +54,82 @@
 
 <body>
 	<div id="navbarsearch">
+		
 		<form class="search">
 			<div class="logo-div col-md-1">
 				<a class="navbar-brand" href="index.html">
 					<img src="img/logo.png" alt="" width="100px">
 				</a>
 			</div>
-			<div class="search-inputs">
-				<label for="location">
-					<div class="label">Location</div>
-					<input name="location" id="location" placeholder="Where are you going?" />
-				</label>
-
+			<div class="row col-md-9">
+				<div class="search-inputs col-md-5">
+					<label for="location">
+						<div class="label">Location</div>
+						<input name="location" id="location" placeholder="Where are you going?" />
+					</label>
+	
+				</div>
+				<div class="search-inputs col-md-2">
+					<label for="check-in">
+						<div class="label">Check in</div>
+						<!-- <input name="check-in" id="check-in" placeholder="Add dates"/> -->
+						<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates" />
+					</label>
+				</div>
+				<div class="search-inputs col-md-2">
+					<label for="check-out">
+						<div class="label">Check out</div>
+						<!-- <input name="check-out" id="check-out" placeholder="Add dates"/> -->
+						<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates" />
+					</label>
+				</div>
+				<div class="search-inputs col-md-2">
+					<label for="guests">
+						<div class="label">Guests</div>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>1 adult</option>
+							<option>2 adults</option>
+							<option>3 adults</option>
+							<option>4 adults</option>
+							<option>5 adults</option>
+							<option>6 adults</option>
+							<option>7 adults</option>
+							<option>8 adults</option>
+							<option>9 adults</option>
+							<option>10 adults</option>
+							<option>11 adults</option>
+							<option>12 adults</option>
+							<option>13 adults</option>
+							<option>14 adults</option>
+							<option>15 adults</option>
+							<option>16 adults</option>
+						</select>
+					</label>
+				</div>
+				<div class="search-button col-md-2">
+					<button><i class="fas fa-search fa-xs"></i></button>
+				</div>
 			</div>
-			<div class="search-inputs">
-				<label for="check-in">
-					<div class="label">Check in</div>
-					<!-- <input name="check-in" id="check-in" placeholder="Add dates"/> -->
-					<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates" />
-				</label>
-			</div>
-			<div class="search-inputs">
-				<label for="check-out">
-					<div class="label">Check out</div>
-					<!-- <input name="check-out" id="check-out" placeholder="Add dates"/> -->
-					<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates" />
-				</label>
-			</div>
-			<div class="search-inputs">
-				<label for="guests">
-					<div class="label">Guests</div>
-					<select class="form-control" id="exampleFormControlSelect1">
-						<option>1 adult</option>
-						<option>2 adults</option>
-						<option>3 adults</option>
-						<option>4 adults</option>
-						<option>5 adults</option>
-						<option>6 adults</option>
-						<option>7 adults</option>
-						<option>8 adults</option>
-						<option>9 adults</option>
-						<option>10 adults</option>
-						<option>11 adults</option>
-						<option>12 adults</option>
-						<option>13 adults</option>
-						<option>14 adults</option>
-						<option>15 adults</option>
-						<option>16 adults</option>
-					</select>
-				</label>
-			</div>
-			<div class="search-button">
-				<button><i class="fas fa-search fa-xs"></i></button>
-			</div>
+			
 		</form>
+		<div>
+					<!-- Toggler -->
+		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
+		aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+		</div>
 	</div>
 
 
 	<!-- Navigation -->
-	<nav class=" bg-dark navbar navbar-expand-md navbar-light navbar-togglable fixed-top" id='navbarmenu'>
+	<nav class="bg-dark navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3" id='navbarmenu'>
 		<!-- Logo -->
 		<div class="logo-div col-xs-1">
 			<a class="navbar-brand" href="index.html">
 				<img src="img/logo.png" alt="" width="100px">
 			</a>
 		</div>
-
 
 		<!-- Collapse -->
 		<div class="collapse navbar-collapse col-xs-11" id="navbarCollapse">
@@ -140,6 +149,12 @@
 				</li>
 			</ul>
 		</div> <!-- / .navbar-collapse -->
+	
+<!-- Toggler -->
+<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
+aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+</button>
 	</nav>
 
 	<!-- Welcome Screen -->
@@ -686,6 +701,8 @@
 				next = next.nextElementSibling
 			}
 		})
+
+		
 	</script>
 </body>
 

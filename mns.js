@@ -9,22 +9,46 @@
 //   }
 // }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("navbarsearch").style.top = "0";
-  } else {
-    document.getElementById("navbarsearch").style.top = "-130px";
-  }
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
+	// if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	//   document.getElementById("navbarsearch").style.top = "0";
+	//   document.getElementById("navbarmenu").style.top = "-130px";
+	// } 
+	const box = document.querySelector('.card');
+	const rect = box.getBoundingClientRect();
+
+	const isInViewport = rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+	if (!isInViewport) {
+		console.log('true');
+		document.getElementById("navbarsearch").style.top = "0";
+		// document.getElementById("navbarmenu").style.display = block;
+		// document.getElementById("navbarmenu").style.display = none;
+		document.getElementById("navbarmenu").style.top = "-130px";
+	} else {
+		console.log('false');
+		// document.getElementById("navbarsearch").style.display = none;
+		// document.getElementById("navbarmenu").style.display = block;
+
+		document.getElementById("navbarsearch").style.top = "-130px";
+		document.getElementById("navbarmenu").style.top = "0";
+
+	}
+	// var currentScrollPos = window.pageYOffset;
+	// if (prevScrollpos > currentScrollPos) {
+	//   document.getElementById("navbar").style.top = "0";
+	// } else {
+	//   document.getElementById("navbar").style.top = "-50px";
+	// }
+	// prevScrollpos = currentScrollPos;
 }
+
+
 
 // /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 // var prevScrollpos = window.pageYOffset;
