@@ -71,7 +71,7 @@
   display:inline-block;
   overflow:hidden;
   background:#cccccc;
-  border:1px solid #cccccc;
+  border:1px solid grey;
 }
 .selectBox{
   width:10rem;
@@ -84,8 +84,33 @@
   border-radius: 25px;
   border: 1px solid grey;
   padding: 20px; 
-  width: 200px;
+  width: 100%;
   height: 10px;
+}
+
+#startDate{
+  border-radius: 25px;
+  border: 1px solid grey;
+  padding: 20px; 
+  width: 100%;
+  height: 10px;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+#endDate{
+  border-radius: 25px;
+  border: 1px solid grey;
+  padding: 20px; 
+  width: 100%;
+  height: 10px;
+  margin-left: 0%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#label{
+  width:100%
 }
 
 #navbarsearch {
@@ -96,6 +121,13 @@
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 1;
   margin-top: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.row {
+  padding-bottom: 0%
 }
 
 /* Search form */
@@ -107,6 +139,7 @@
 /*   height: 50px; */
   border-radius: 50px;
   overflow: hidden;
+  box-shadow: 10px 10px 8px #888888;
 }
 
 .search .label {

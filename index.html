@@ -55,39 +55,37 @@
 <body>
 	<div id="navbarsearch">
 		
-		<form class="search">
+		<form class="search" >
 			<div class="logo-div col-md-1">
 				<a class="navbar-brand" href="index.html">
 					<img src="img/logo.png" alt="" width="100px">
 				</a>
 			</div>
-			<div class="row col-md-9">
+			<div class="row col-md-9" >
 				<div class="search-inputs col-md-5">
 					<label for="location">
 						<div class="label" style="padding-left: 6%;">Location</div>
 						<!-- <div class="selectWrapper"> -->
-						<input class="form-control"  style="border-radius: 25px;" name="location" id="ip1" placeholder="Where are you going?" />
+						<input type="text" name="location" id="ip1" placeholder="Where are you going?" />
 						<!-- </div> -->
 					</label>
 	
 				</div>
-				<div class="search-inputs col-md-2">
+				<div class="search-inputs col-md-2" style="width: 100%">
 					<label for="check-in">
-						<div class="label">Check in</div>
-						<!-- <input name="check-in" id="check-in" placeholder="Add dates"/> -->
-						<input class="form-control" type="date" class="br0" id="startDate" />
+						<div class="label" style="padding-left: 7%">Check in</div>
+						<input type="date" id="startDate" />
 					</label>
 				</div>
-				<div class="search-inputs col-md-2">
+				<div class="search-inputs col-md-2"  style="width: 100%">
 					<label for="check-out">
-						<div class="label">Check out</div>
-						<!-- <input name="check-out" id="check-out" placeholder="Add dates"/> -->	
-						<input class="form-control" type="date" class="br0" id="endDate" />
+						<div class="label" style="padding-left:7%">Check out</div>	
+						<input  type="date"  id="endDate" />
 					</label>
 				</div>
-				<div class="search-inputs col-md-2">
+				<div class="search-inputs col-md-2" style="width:100%">
 					<label for="guests">
-						<div class="label" style="padding-left: 6%;">Guests</div>
+						<div class="label" style="padding-left: 6%;width: 100%;">Guests</div>
 						<div class="selectWrapper">
 						<select class="selectBox" id="exampleFormControlSelect1" >
 							<option>1 adult</option>
@@ -223,7 +221,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 						</div>
 					</div>
 				</form>
-				<a href="#" class="btn btn-danger btn-block" style="background-color: #f58b5d;">Search</a>
+				<a href="#" class="btn btn-danger btn-block" style="background-color: #f58b5d;margin-top:5%;width: 100%;">Search</a>
 			</div>
 		</div>
 	</div>
@@ -491,7 +489,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 					</div>
 				</div>
 				<!-- Just booked near you -->
-				<div class="row container-fluid py-3 mt-4">
+				<div class="row container-fluid py-3 mt-4" style="padding-bottom: 0px;">
 					<h2 class="h3">Just Booked Near You</h2>
 					<div class="row mt-4">
 						<div class="col-md-3">
@@ -558,7 +556,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 					</div>
 				</div>
 				<!-- City Carousel-->
-				<div class="row container-fluid py-3 mt-4">
+				<div class="row container-fluid py-3 mt-4" style="margin-top:px;padding-top: 0px;">
 					<h2 class="font-weight-light">City</h2>
 					<div class="row mx-auto my-auto justify-content-center">
 						<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
