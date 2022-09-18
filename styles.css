@@ -42,7 +42,7 @@
 }
 
 #welcome-div{
-  background: url(img/bg2.jpg) no-repeat center fixed;
+  background: url(img/bg3.jpg) no-repeat center fixed;
   height: 100vh;
   background-size: cover;
   margin-bottom: 0;
@@ -83,7 +83,7 @@
 }
 
 #searchlogo{
-  margin-left: -5%;
+  margin-left: 0%;
 }
 
 .selectWrapper{
@@ -133,6 +133,9 @@
   width:100%
 }
 
+.dropdown-btn:hover .dropdown-menu{
+  display: block;
+}
 #navbarsearch {
   background-color: transparent; /* Black background color */
   position: fixed; /* Make it stick/fixed */
@@ -213,11 +216,15 @@
 }
 
 footer a:hover{
-  color: #d27d22;
+  color: #d27d22 !important;
 }
 
 footer a{
-  color: #fff;
+  color: #fff !important;
+}
+
+footer{
+  color: #fff !important;
 }
 
 /*Carousel City*/
@@ -238,6 +245,18 @@ footer a{
   justify-content: center;
   margin:0 0 0.5em
 }
+
+.card-body a{
+  color: #000;
+}
+
+.card-body a:hover{
+  color: #d27d22 !important;
+
+}
+
+input
+
 
 .carousel-inner{
   padding: 1em;

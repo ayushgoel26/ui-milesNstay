@@ -14,6 +14,7 @@
 	<!-- Javacript Files  -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="styles.css">
 	<style>
 		.navbar-fixed-top {
@@ -66,10 +67,10 @@
 		<form class="search" >
 			<div class="col-md-1 d-flex flex-wrap align-items-center" id="searchlogo">
 				<a class="navbar-brand" href="index.html">
-					<img src="img/logo1.png" alt="" width="150%">
+					<img src="img/logo3.png" alt="" width="150%">
 				</a>
 			</div>
-			<div class="row col-md-9" >
+			<div class="row col-md-9 px-5" >
 				<div class="search-inputs col-md-5">
 					<label for="location">
 						<div class="label" style="padding-left: 6%;">Location</div>
@@ -116,26 +117,30 @@
 						</div>
 					</label>
 				</div>
-				<div class="search-button col-md-1 orange d-flex flex-wrap align-items-center" style="margin:0px;padding-bottom:5px;height: auto;">
+				<div class="search-button col-md-1 orange d-flex flex-wrap align-items-center" style="margin-top:-1%;margin-left:5%">
 					<button style="margin-top:12%;background-color: #f58b5d;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-					  </svg></i></button>
+					  </svg></button>
 				</div>
 
 			</div>
 			
-		</form>
-		<div class="dropdown show">
-			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  Dropdown link
-			</a>
-		  
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			  <a class="dropdown-item" href="#">Action</a>
-			  <a class="dropdown-item" href="#">Another action</a>
-			  <a class="dropdown-item" href="#">Something else here</a>
+			<div class="dropdown col-md-1 orange d-flex flex-wrap align-items-center" >
+				<div class="dropdown-btn">
+				<button class="btn btn-secondary" style="background:#f58b5d" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-justify"></i></button>
+				<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+				  <li><a class="dropdown-item active" href="#">Become a Host</a></li>
+				  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+				  <li><a class="dropdown-item" href="#">Login</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href="#">Help</a></li>
+				</ul>
+				</div>
 			</div>
-		  </div>
+
+
+		</form>
+
 	</div>
 
 
@@ -144,7 +149,7 @@
 		<!-- Logo -->
 		<div class="logo-div col-sm-1">
 			<a class="navbar-brand" href="index.html">
-				<img src="img/logo1.png" alt="" width="200%">
+				<img src="img/logo3.png" alt="" width="200%">
 			</a>
 		</div>
 
@@ -189,10 +194,10 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 					</div>
 					<div class="row px-3">
 						<div class="col-sm-6 px-0">
-							Start Date: <input class="form-control" type="date" class="br0" id="startDate" />
+							Start Date: <input class="form-control" type="date" style="display: inline;" id="startDate" />
 						</div>
 						<div class="col-sm-6 pr-0 br0">
-							End Date: <input class="form-control" type="date" class="br0" id="endDate" />
+							End Date: <input class="form-control" type="date" id="endDate" />
 						</div>
 					</div>
 					<div class="row px-3">
@@ -242,7 +247,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 col-lg-2 p-4 bg-light border">
-				<div class="h5 text-uppercase">Filter By</div> 
+				<div class="h5 text-uppercase">Filter By <span class="justify-content-end" style="text-align: right;"><i class="bi bi-sliders"></i></span></div>
 				<hr class="divider">
 				<h5>Price Range</h5>
 				<div class="row">
@@ -494,7 +499,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 												<img src="img/seattle.jpeg" class="img-fluid card-img-top rounded">
 											</div>
 											<div class="card-body">
-												<a href="#">
+												<a class="cityanchor" href="#">
 													<h5 class="card-title">Seattle</h5>
 												</a>
 											</div>
@@ -700,7 +705,7 @@ aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigati
 			<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
 			<li class="nav-item"><a href="#" class="nav-link">Terms and Conditions</a></li>
 		</ul>
-		<p class="text-center text-muted">© 2022 MilesNStay, Inc</p>
+		<p class="text-center">© 2022 MilesNStay, Inc</p>
 	</footer>
 	<script>
 		let items = document.querySelectorAll('.carousel .carousel-item')
