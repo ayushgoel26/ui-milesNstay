@@ -64,8 +64,10 @@
 			<div class="row col-md-9">
 				<div class="search-inputs col-md-5">
 					<label for="location">
-						<div class="label">Location</div>
-						<input name="location" id="location" placeholder="Where are you going?" />
+						<div class="label" style="padding-left: 6%;">Location</div>
+						<!-- <div class="selectWrapper"> -->
+						<input class="form-control"  style="border-radius: 25px;" name="location" id="ip1" placeholder="Where are you going?" />
+						<!-- </div> -->
 					</label>
 	
 				</div>
@@ -73,20 +75,21 @@
 					<label for="check-in">
 						<div class="label">Check in</div>
 						<!-- <input name="check-in" id="check-in" placeholder="Add dates"/> -->
-						<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates" />
+						<input class="form-control" type="date" class="br0" id="startDate" />
 					</label>
 				</div>
 				<div class="search-inputs col-md-2">
 					<label for="check-out">
 						<div class="label">Check out</div>
-						<!-- <input name="check-out" id="check-out" placeholder="Add dates"/> -->
-						<input class="form-control" type="date" class="br0" id="endDate" placeholder="Add Dates" />
+						<!-- <input name="check-out" id="check-out" placeholder="Add dates"/> -->	
+						<input class="form-control" type="date" class="br0" id="endDate" />
 					</label>
 				</div>
 				<div class="search-inputs col-md-2">
 					<label for="guests">
-						<div class="label">Guests</div>
-						<select class="form-control" id="exampleFormControlSelect1">
+						<div class="label" style="padding-left: 6%;">Guests</div>
+						<div class="selectWrapper">
+						<select class="selectBox" id="exampleFormControlSelect1" >
 							<option>1 adult</option>
 							<option>2 adults</option>
 							<option>3 adults</option>
@@ -104,10 +107,13 @@
 							<option>15 adults</option>
 							<option>16 adults</option>
 						</select>
+						</div>
 					</label>
 				</div>
-				<div class="search-button col-md-2">
-					<button><i class="fas fa-search fa-xs"></i></button>
+				<div class="search-button col-md-2" style="padding-left:2%">
+					<button style="margin-top:12%"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					  </svg></i></button>
 				</div>
 			</div>
 			

@@ -56,12 +56,36 @@
   object-fit: cover
 }
 
-
+.search-button{
+  margin-left: 0%;
+}
 
 /* Header */
 
 #navbarmenu{
   background: rgba(255, 255, 255, 0.416) !important;
+}
+
+.selectWrapper{
+  border-radius:36px;
+  display:inline-block;
+  overflow:hidden;
+  background:#cccccc;
+  border:1px solid #cccccc;
+}
+.selectBox{
+  width:10rem;
+  height:40px;
+  border:0px;
+  outline:none;
+}
+
+#ip1{
+  border-radius: 25px;
+  border: 1px solid grey;
+  padding: 20px; 
+  width: 200px;
+  height: 10px;
 }
 
 #navbarsearch {
