@@ -42,7 +42,7 @@
 }
 
 #welcome-div{
-  background: url(img/bg3.jpg) no-repeat center fixed;
+  background: url(img/bg2.jpg) no-repeat center fixed;
   height: 100vh;
   background-size: cover;
   margin-bottom: 0;
@@ -68,7 +68,8 @@
 
 .card-img-top {
   height:15em;
-  object-fit: cover
+  object-fit: cover;
+  min-height: 15em;
 }
 
 .search-button{
@@ -93,38 +94,6 @@
   outline:none;
 }
 
-<<<<<<< HEAD
-=======
-#ip1{
-  border-radius: 25px;
-  border: 1px solid grey;
-  padding: 20px; 
-  width: 100%;
-  height: 10px;
-}
-
-#startDate{
-  border-radius: 25px;
-  border: 1px solid grey;
-  padding: 20px; 
-  width: 100%;
-  height: 10px;
-  margin-right:auto;
-  margin-left: auto;
-}
-
-#endDate{
-  border-radius: 25px;
-  border: 1px solid grey;
-  padding: 20px; 
-  width: 100%;
-  height: 10px;
-  margin-left: 0%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
->>>>>>> parent of 3cac89c (Navbar input changes)
 #label{
   width:100%
 }
