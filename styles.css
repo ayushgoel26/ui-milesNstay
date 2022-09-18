@@ -52,10 +52,7 @@
 
 .logo-div{
   opacity: 100%;
-  width:75%;
-  padding:0px;
-  margin:0px;
-
+  
 }
 
 .card {
@@ -82,7 +79,11 @@
 /* Header */
 
 #navbarmenu{
-  background: rgba(255, 255, 255, 1 ) !important;
+  background: rgba(255, 255, 255, 0.75 ) !important;
+}
+
+#searchlogo{
+  margin-left: -5%;
 }
 
 .selectWrapper{
@@ -152,12 +153,12 @@
 /* Search form */
 .search {
   display: flex;
-  flex-flow: row no-wrap;
+  /* flex-flow: row no-wrap; */
   justify-content: space-evenly;
   background: white;
 /*   height: 50px; */
   border-radius: 50px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 10px 10px 8px #888888;
 }
 

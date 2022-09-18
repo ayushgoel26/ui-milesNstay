@@ -37,6 +37,13 @@
 		.carousel-inner .carousel-item-start {
 			transform: translateX(0);
 		}
+
+		.logo-div-main{
+			width:80%;
+			padding-bottom:1%;
+			padding-top: 1%;
+
+		}
 	</style>
 
 	<!-- Javacript Files  -->
@@ -57,9 +64,9 @@
 	<div id="navbarsearch">
 		
 		<form class="search" >
-			<div class="logo-div col-md-1">
+			<div class="col-md-1 d-flex flex-wrap align-items-center" id="searchlogo">
 				<a class="navbar-brand" href="index.html">
-					<img src="img/logo1.png" alt="" width="100px">
+					<img src="img/logo1.png" alt="" width="150%">
 				</a>
 			</div>
 			<div class="row col-md-9" >
@@ -109,21 +116,17 @@
 						</div>
 					</label>
 				</div>
-				<div class="search-button col-md-2 orange" style="padding-left:2%">
+				<div class="search-button col-md-1 orange d-flex flex-wrap align-items-center" style="margin:0px;padding-bottom:5px;height: auto;">
 					<button style="margin-top:12%;background-color: #f58b5d;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 					  </svg></i></button>
 				</div>
 
-				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
-				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-</button>
 			</div>
 			
 		</form>
 		<div>
-					<!-- Toggler -->
+		<!-- Toggler -->
 		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
 		aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -133,16 +136,16 @@
 
 
 	<!-- Navigation -->
-	<nav class="bg-dark navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3" id='navbarmenu'>
+	<nav class="bg-dark navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3 py-3 row" id='navbarmenu'>
 		<!-- Logo -->
-		<div class="logo-div col-xs-1">
+		<div class="logo-div col-sm-1">
 			<a class="navbar-brand" href="index.html">
-				<img src="img/logo1.png" alt="" width="15%">
+				<img src="img/logo1.png" alt="" width="200%">
 			</a>
 		</div>
 
 		<!-- Collapse -->
-		<div class="collapse navbar-collapse col-xs-11" id="navbarCollapse">
+		<div class="collapse navbar-collapse col-sm-11 justify-content-end" id="navbarCollapse">
 			<!-- Links -->
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item mx-2">
