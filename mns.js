@@ -9,22 +9,22 @@
 //   }
 // }
 
-// window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//     document.getElementById("navbarsearch").style.top = "0";
-//   } else {
-//     document.getElementById("navbarsearch").style.top = "-130px";
-//   }
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("navbarsearch").style.top = "0";
+  } else {
+    document.getElementById("navbarsearch").style.top = "-130px";
+  }
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 // /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 // var prevScrollpos = window.pageYOffset;
