@@ -60,6 +60,12 @@
   padding: 10px;
 }
 
+#card-search{
+  background-color: #f58b5d;
+  margin-top:5%;
+  width: 100%;
+}
+
 @media (min-width: 991px) {
   .card {
     width: 30%
@@ -96,6 +102,10 @@
 
 #label{
   width:100%
+}
+
+.dropdown-btn button{
+  background:#f58b5d
 }
 
 .dropdown-btn:hover .dropdown-menu{
@@ -163,6 +173,8 @@
 .search-button {
   flex: 0 0 auto;
   padding: 8px 8px 8px 0;
+  margin-top: -1%;
+  margin-left: 5%
 }
 
 .search-button button {
@@ -171,13 +183,23 @@
   height: 48px;
   border-radius: 30px;
   border: none;
-  background: red;
+  background-color: #f58b5d;
   color: white;
+  margin-top:12%;
 }
-@media (max-width: 991px) {
-  .col-sm-6 {
+@media (max-width: 769px) {
+  .col-md-6 {
     padding-left: 0 !important;
   }
+}
+
+#show-more-btn {
+  color:#f58b5d;
+  text-decoration-color: #f58b5d;
+}
+
+#show-more-btn .h6{
+  color: #f58b5d;
 }
 
 footer a:hover{
