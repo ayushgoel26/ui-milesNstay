@@ -42,7 +42,7 @@ function scrollFunction() {
 // let items = document.querySelectorAll('.carousel .carousel-item')
 // console.log(items)
 
-// items.forEach((el) => {
+// window.onload = () => { items.forEach((el) => {
 //   console.log("hi")
 //     const minPerSlide = 4
 //     let next = el.nextElementSibling
@@ -55,4 +55,4 @@ function scrollFunction() {
 //         el.appendChild(cloneChild.children[0])
 //         next = next.nextElementSibling
 //     }
-// })
+// })};
