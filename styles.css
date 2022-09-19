@@ -216,8 +216,8 @@ input .carousel-inner {
 }
 
 .img-fluidX {
-	width: 10vh;
-	height: 10vh;
+	width: 8vh;
+	height: 8vh;
 }
 
 @media (max-width: 767px) {
