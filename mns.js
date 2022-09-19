@@ -2,10 +2,6 @@
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-	// if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-	//   document.getElementById("navbarsearch").style.top = "0";
-	//   document.getElementById("navbarmenu").style.top = "-130px";
-	// } 
 	const box = document.querySelector('.card');
 	const rect = box.getBoundingClientRect();
 
@@ -15,25 +11,14 @@ function scrollFunction() {
 		rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 
 	if (!isInViewport) {
-		console.log('true');
 		document.getElementById("navbarsearch").style.top = "0";
-		// document.getElementById("navbarmenu").style.display = block;
-		// document.getElementById("navbarmenu").style.display = none;
-		document.getElementById("navbarmenu").style.top = "-130px";
+		document.getElementById("navbarmenu").style.opacity = '100%';
+		document.getElementById("navbarmenu").style.background = '#fff';
+		document.getElementById("navbarmenu").style.top = "-100%";
 	} else {
-		console.log('false');
-		// document.getElementById("navbarsearch").style.display = none;
-		// document.getElementById("navbarmenu").style.display = block;
-
-		document.getElementById("navbarsearch").style.top = "-130px";
+		document.getElementById("navbarsearch").style.top = "-100%";
+		document.getElementById("navbarmenu").style.opacity = '80%';
+		document.getElementById("navbarmenu").style.background = '#fff';
 		document.getElementById("navbarmenu").style.top = "0";
-
 	}
-	// var currentScrollPos = window.pageYOffset;
-	// if (prevScrollpos > currentScrollPos) {
-	//   document.getElementById("navbar").style.top = "0";
-	// } else {
-	//   document.getElementById("navbar").style.top = "-50px";
-	// }
-	// prevScrollpos = currentScrollPos;
 }

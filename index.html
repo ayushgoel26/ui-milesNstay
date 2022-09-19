@@ -1,67 +1,175 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Miles'N'Stay</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Miles"N"Stay</title>
 
-		<!-- CSS Files -->
-		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-		<link rel="stylesheet" href="styles.css">
+	<!-- CSS Files -->
+	<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="styles.css">
 
-		<!-- Javacript Files  -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-			integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-			crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-		<script type="text/javascript" src="mns.js"></script>
-	</head>
+	<!-- Javacript Files  -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+		integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="mns.js"></script>
+</head>
 
-	<body>
-		<!--Search NavBar-->
-		<div id="navbarsearch">
-			<form class="search" >
-				<div class="col-md-1 d-flex flex-wrap align-items-center" id="searchlogo">
-					<a class="navbar-brand" href="index.html">
-						<img src="img/logo.png" alt="" width="150%">
-					</a>
+<body>
+	<!--Search NavBar-->
+	<div id="navbarsearch">
+		<form class="search">
+			<div class="col-md-1 d-flex flex-wrap align-items-center" id="searchlogo">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo.png" alt="" width="150%">
+				</a>
+			</div>
+			<div class="row col-md-9 px-5">
+				<div class="search-inputs col-md-5">
+					<label for="location">
+						<div class="label">Location</div>
+						<input type="text" name="location" id="ip1" placeholder="Where are you going?" />
+					</label>
 				</div>
-				<div class="row col-md-9 px-5" >
-					<div class="search-inputs col-md-5">
-						<label for="location">
-							<div class="label" >Location</div>
-							<input type="text" name="location" id="ip1" placeholder="Where are you going?" />
-						</label>
+				<div class="search-inputs col-md-2">
+					<label for="check-in">
+						<div class="label">Check in</div>
+						<input type="date" id="startDate" />
+					</label>
+				</div>
+				<div class="search-inputs col-md-2">
+					<label for="check-out">
+						<div class="label">Check out</div>
+						<input type="date" id="endDate" />
+					</label>
+				</div>
+				<div class="search-inputs col-md-2">
+					<label for="guests">
+						<div class="label">Guests</div>
+						<div class="selectWrapper">
+							<select class="selectBox" id="guest-count">
+								<option>1 adult</option>
+								<option>2 adults</option>
+								<option>3 adults</option>
+								<option>4 adults</option>
+								<option>5 adults</option>
+								<option>6 adults</option>
+								<option>7 adults</option>
+								<option>8 adults</option>
+								<option>9 adults</option>
+								<option>10 adults</option>
+								<option>11 adults</option>
+								<option>12 adults</option>
+								<option>13 adults</option>
+								<option>14 adults</option>
+								<option>15 adults</option>
+								<option>16 adults</option>
+							</select>
+						</div>
+					</label>
+				</div>
+				<div class="search-button col-md-1 orange d-flex flex-wrap align-items-center">
+					<button><i class="bi bi-search"></i></button>
+				</div>
+			</div>
+			<div class="dropdown col-md-1 orange d-flex flex-wrap align-items-center">
+				<div class="dropdown-btn">
+					<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="bi bi-justify"></i>
+					</button>
+					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+						<li>
+							<a class="dropdown-item active" href="#">Become a Host</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Sign Up</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Login</a>
+						</li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Help</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<nav class="navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3 py-3 row" id='navbarmenu'>
+		<div class="logo-div col-sm-1">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/logo.png" alt="" width="200%">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse col-sm-11 justify-content-end" id="navbarCollapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="#">Become a host</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="#">Help</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="#">Sign up</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="#">Login</a>
+				</li>
+			</ul>
+		</div>
+
+
+	</nav>
+
+	<!-- Welcome Screen -->
+	<div class="jumbotron jumbotron-fluid" id="welcome-div">
+		<div class="card">
+			<div class="card-body">
+				<h1 class="h3 mb-3 text-center">Make a Reservation</h1>
+				<form>
+					<div class="row px-3">
+						<label class="mb-0" for="locationInput mb-0 mt-5">WHERE</label>
+						<input type="email" class="form-control w-100 br0 pe-0" id="locationInput"
+							aria-describedby="locationInputHelp" placeholder="Anywhere">
+						<small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired
+							destination.</small>
 					</div>
-					<div class="search-inputs col-md-2">
-						<label for="check-in">
-							<div class="label">Check in</div>
-							<input type="date" id="startDate" />
-						</label>
+					<div class="row px-3">
+						<div class="col-md-6 px-0">
+							Start Date: <input class="form-control" type="date" id="startDate1" />
+						</div>
+						<div class="col-md-6 pe-0 br0">
+							End Date: <input class="form-control" type="date" id="endDate1" />
+						</div>
 					</div>
-					<div class="search-inputs col-md-2">
-						<label for="check-out">
-							<div class="label">Check out</div>	
-							<input  type="date"  id="endDate" />
-						</label>
-					</div>
-					<div class="search-inputs col-md-2">
-						<label for="guests">
-							<div class="label">Guests</div>
-							<div class="selectWrapper">
-								<select class="selectBox" id="guest-count" >
+					<div class="row px-3">
+						<div class="col-md-6 px-0 br0">
+							<div class="form-group">
+								<label class="mb-0" for="exampleFormControlSelect1">ADULTS</label>
+								<select class="form-control" id="exampleFormControlSelect1">
 									<option>1 adult</option>
 									<option>2 adults</option>
 									<option>3 adults</option>
@@ -80,599 +188,509 @@
 									<option>16 adults</option>
 								</select>
 							</div>
+						</div>
+						<div class="col-md-6 pe-0 br0">
+							<div class="form-group">
+								<label class="mb-0" for="exampleFormControlSelect2">CHILDREN</label>
+								<select class="form-control" id="exampleFormControlSelect2">
+									<option>0 children</option>
+									<option>1 child</option>
+									<option>2 children</option>
+									<option>3 children</option>
+									<option>4 children</option>
+									<option>5 children</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</form>
+				<a href="#" class="btn btn-block" id="card-search">Search</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!--LeftBar-->
+			<div class="col-md-3 col-lg-2 p-4 bg-light border">
+				<div class="row">
+					<div class="h5 text-uppercase col-md-9">
+						Filter By
+					</div>
+					<div class="justify-content-end col-md-3">
+						<i class="bi bi-sliders"></i>
+					</div>
+				</div>
+				<hr class="divider">
+				<h5>Price Range</h5>
+				<div class="row">
+					<div class="input-group input-group-sm mb-3 form-group">
+						<span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+						<input type="number" class="form-control" min="30" max="999" value="30" id="minPrice">
+						<span>-</span>
+						<span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+						<input type="number" class="form-control" min="31" max="1000" value="1000" id="maxPrice">
+					</div>
+				</div>
+				<hr class="divider">
+				<h5>Type of Place</h5>
+				<div class="row px-3">
+					<div class="form-check form-group">
+						<input class="form-check-input" type="checkbox" value="entire-place" id="entire-place">
+						<label class="form-check-label" for="entire-place">
+							Entire Place
 						</label>
 					</div>
-					<div class="search-button col-md-1 orange d-flex flex-wrap align-items-center">
-						<button><i class="bi bi-search"></i></button>
+					<div class="form-check form-group">
+						<input class="form-check-input" type="checkbox" value="private-room" id="private-room">
+						<label class="form-check-label" for="private-room">
+							Private Room
+						</label>
+					</div>
+					<div class="form-check form-group">
+						<input class="form-check-input" type="checkbox" value="shared-room" id="shared-room">
+						<label class="form-check-label" for="shared-room">
+							Shared Room
+						</label>
 					</div>
 				</div>
-				<div class="dropdown col-md-1 orange d-flex flex-wrap align-items-center" >
-					<div class="dropdown-btn">
-						<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="bi bi-justify"></i>
+				<hr class="divider">
+				<h5>Rooms and beds</h5>
+				<div class="row">
+					<div class="bedrooms px-4 pt-3">
+						<h6>Bedrooms</h6>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount1"
+								value="option1">
+							<label class="form-check-label" for="BedroomCount1">1</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount2"
+								value="option2">
+							<label class="form-check-label" for="BedroomCount2">2</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount3"
+								value="option3">
+							<label class="form-check-label" for="BedroomCount3">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount4"
+								value="option4">
+							<label class="form-check-label" for="BedroomCount4">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount5"
+								value="option5">
+							<label class="form-check-label" for="BedroomCount5">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount6"
+								value="option6">
+							<label class="form-check-label" for="BedroomCount6">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount7"
+								value="option7">
+							<label class="form-check-label" for="BedroomCount7">7</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount8"
+								value="option8">
+							<label class="form-check-label" for="BedroomCount8">8+</label>
+						</div>
+					</div>
+					<div class="beds px-4 pt-3">
+						<h6>Beds</h6>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount1"
+								value="option1">
+							<label class="form-check-label" for="bedcount1">1</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount2"
+								value="option2">
+							<label class="form-check-label" for="bedcount2">2</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount3"
+								value="option3">
+							<label class="form-check-label" for="bedcount3">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount4"
+								value="option4">
+							<label class="form-check-label" for="bedcount4">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount5"
+								value="option5">
+							<label class="form-check-label" for="bedcount5">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount6"
+								value="option6">
+							<label class="form-check-label" for="bedcount6">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount7"
+								value="option7">
+							<label class="form-check-label" for="bedcount7">7</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount8"
+								value="option8">
+							<label class="form-check-label" for="bedcount8">8+</label>
+						</div>
+					</div>
+					<div class="bathrooms px-4 pt-3">
+						<h6>Bathrooms</h6>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom1"
+								value="option1">
+							<label class="form-check-label" for="bathroom1">1</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom2"
+								value="option2">
+							<label class="form-check-label" for="bathroom2">2</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom3"
+								value="option3">
+							<label class="form-check-label" for="bathroom3">3</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom4"
+								value="option4">
+							<label class="form-check-label" for="bathroom4">4</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom5"
+								value="option5">
+							<label class="form-check-label" for="bathroom5">5</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom6"
+								value="option6">
+							<label class="form-check-label" for="bathroom6">6</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom7"
+								value="option7">
+							<label class="form-check-label" for="bathroom7">7</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom8"
+								value="option8">
+							<label class="form-check-label" for="bathroom8">8+</label>
+						</div>
+					</div>
+				</div>
+				<hr class="divider">
+			</div>
+			<div class="col-md-9 col-lg-10">
+				<!--City Corousel-->
+				<div class="row container-fluid py-3 mt-4 pe-0 me-0">
+					<h2 class="h3">City</h2>
+					<div class="row mt-4 justify-content-center">
+						<div id="cityCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="col-md-3">
+										<div class="card-city border-0">
+											<div class="card-img">
+												<img src="img/city-thumbnails/austin.jpeg"
+													class="img-fluid card-img-top rounded" alt="Austin">
+											</div>
+											<div class="card-body">
+												<a href="#">
+													<h5 class="card-title">Austin</h5>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="col-md-3">
+										<div class="card-city border-0">
+											<div class="card-img">
+												<img src="img/city-thumbnails/chicago.jpeg"
+													class="img-fluid card-img-top rounded" alt="Chicago">
+											</div>
+											<div class="card-body">
+												<a href="#">
+													<h5 class="card-title">Chicago</h5>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="col-md-3">
+										<div class="card-city border-0">
+											<div class="card-img">
+												<img src="img/city-thumbnails/denver.jpeg"
+													class="img-fluid card-img-top rounded" alt="Denver">
+											</div>
+											<div class="card-body">
+												<a href="#">
+													<h5 class="card-title">Denver</h5>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="col-md-3">
+										<div class="card-city border-0">
+											<div class="card-img">
+												<img src="img/city-thumbnails/NewYork.jpeg"
+													class="img-fluid card-img-top rounded" alt="New York">
+											</div>
+											<div class="card-body">
+												<a href="#">
+													<h5 class="card-title">New York</h5>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="col-md-3">
+										<div class="card-city border-0">
+											<div class="card-img">
+												<img src="img/city-thumbnails/SanFrancisco.webp"
+													class="img-fluid card-img-top rounded" alt="San Francisco">
+											</div>
+											<div class="card-body">
+												<a href="#">
+													<h5 class="card-title">San Francisco</h5>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="col-md-3">
+										<div class="card-city border-0">
+											<div class="card-img">
+												<img src="img/city-thumbnails/seattle.jpeg"
+													class="img-fluid card-img-top rounded" alt="Seattle">
+											</div>
+											<div class="card-body">
+												<a class="cityanchor" href="#">
+													<h5 class="card-title">Seattle</h5>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev bg-dark w-aut" href="#cityCarousel" role="button"
+								data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							</a>
+							<a class="carousel-control-next bg-dark w-aut" href="#cityCarousel" role="button"
+								data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<hr class="divider">
+				<!--Reviews-->
+				<div class=" row container-fluid py-3 mt-4 pe-0 me-0">
+					<h2 class="h3">What Our Guests Have To Say</h2>
+					<div class="row mt-4">
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/review-pics/review4.jpg" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="orange py-2">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">Hosting my home allowed me to become an entrepreneur and laid
+										down a path to financial freedom.</p>
+									<div class="">
+										<div class="d-flex">
+											<img src="img/user-thumbnails/user1.jpg"
+												class="m-0 img-fluidX rounded-circle" alt="...">
+											<div class="d-flex flex-column py-2 px-4">
+												<h5 class="mt-0 mb-1">Sara</h5>
+												<p>United States</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/review-pics/review2.jpeg" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="orange py-2">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">After carefully searching for two weeks, I finally decided on
+										an "milesNstay" to book for a month, while I was new to the Los Angeles area. It
+										was a decent commute for me, and the price was good. Most importantly, it
+										allowed pets.</p>
+									<div class="">
+										<div class="d-flex">
+											<img src="img/user-thumbnails/user3.jpeg"
+												class="m-0 img-fluidX rounded-circle" alt="...">
+											<div class="d-flex flex-column py-2 px-4">
+												<h5 class="mt-0 mb-1">Jacob</h5>
+												<p>United States</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/review-pics/review3.jpeg" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="orange py-2">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">The property is absolutely clean and stylish. It is exactly the
+										same as shown in the pictures and within walking distances to various
+										attractions.</p>
+									<div class="">
+										<div class="d-flex">
+											<img src="img/user-thumbnails/user2.jpeg"
+												class="m-0 img-fluidX rounded-circle" alt="...">
+											<div class="d-flex flex-column py-2 px-4">
+												<h5 class="mt-0 mb-1">Lily</h5>
+												<p>South Korea</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/review-pics/review1.jpeg" class="card-img-top rounded" alt="...">
+								<div class="card-body pl-0">
+									<h5 class="orange py-2">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
+									<p class="card-text">Pictures on the internet do not do this property justice wow
+										factor. Location was fab. Quiet but close to shops parks and train station. Very
+										comfortable would definitely recommend.</p>
+									<div class="">
+										<div class="d-flex">
+											<img src="img/user-thumbnails/user4.jpeg"
+												class="m-0 img-fluidX rounded-circle" alt="...">
+											<div class="d-flex flex-column py-2 px-4">
+												<h5 class="mt-0 mb-1">Gabriel</h5>
+												<p>Costa Rica</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="divider">
+				<!-- Just booked near you -->
+				<div class="row container-fluid py-3 mt-4 pe-0 me-0">
+					<h2 class="h3">Just Booked Near You</h2>
+					<div class="row mt-4">
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/property-thumbnails/jbnu1.jpeg" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">The Joshua Tree House</h5>
+									<p class="card-text m-0">$290/night</p>
+									<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+											class="text-secondary"> 465, Verified Host</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/property-thumbnails/jbnu2.jpeg" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Lounge, Mushroom Dome</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">Mushroom Dome Cabin</h5>
+									<p class="card-text m-0">$130/night</p>
+									<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+											class="text-secondary"> 1383, Verified Host</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/property-thumbnails/jbnu3.jpeg" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Play Area, Hygge</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">Underground Hygge</h5>
+									<p class="card-text m-0">$150/night</p>
+									<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+											class="text-secondary"> 544, Verified Host</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="card-mb-3 border-0">
+								<img src="img/property-thumbnails/jbnu4.jpg" class="card-img-top rounded" alt="...">
+								<p class="small text-uppercase pb-0">Bedroom King size, Mushroom Dome</p>
+								<div class="card-body p-0">
+									<h5 class="card-title">Mushroom Cabin</h5>
+									<p class="card-text m-0">$500/night</p>
+									<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+											class="text-secondary"> 1383, Verified Host</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-2 mb-5">
+						<button class="btn  btn-link" id="show-more-btn">
+							<a class="blue">Show all(22,000+)&gt;&gt;</a>
 						</button>
-						<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-							<li>
-								<a class="dropdown-item active" href="#">Become a Host</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Sign Up</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Login</a>
-							</li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li>
-								<a class="dropdown-item" href="#">Help</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</form>
-		</div>
-
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3 py-3 row" id='navbarmenu'>
-			<!-- Logo -->
-			<div class="logo-div col-sm-1">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/logo.png" alt="" width="200%">
-				</a>
-			</div>
-			<!-- Collapse -->
-			<div class="collapse navbar-collapse col-sm-11 justify-content-end" id="navbarCollapse">
-				<!-- Links -->
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">Become a host</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">Help</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">Sign up</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">Login</a>
-					</li>
-				</ul>
-			</div> <!-- / .navbar-collapse -->
-		
-			<!-- Toggler -->
-			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse"
-			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-			</button>
-		</nav>
-
-		<!-- Welcome Screen -->
-		<div class="jumbotron jumbotron-fluid" id="welcome-div">
-			<div class="card">
-				<div class="card-body">
-					<h1 class="h3 mb-3 text-center">Make a Reservation</h1>
-					<form>
-						<div class="row px-3">
-							<label class="mb-0" for="locationInput mb-0 mt-5">WHERE</label>
-							<input type="email" class="form-control w-100 br0 pe-0" id="locationInput"
-								aria-describedby="locationInputHelp" placeholder="Anywhere">
-							<small id="locationInputHelp" class="form-text text-muted sr-only">Please type in your desired
-								destination.</small>
-						</div>
-						<div class="row px-3">
-							<div class="col-md-6 px-0">
-								Start Date: <input class="form-control" type="date" id="startDate1" />
-							</div>
-							<div class="col-md-6 pe-0 br0">
-								End Date: <input class="form-control" type="date" id="endDate1" />
-							</div>
-						</div>
-						<div class="row px-3">
-							<div class="col-md-6 px-0 br0">
-								<div class="form-group">
-									<label class="mb-0" for="exampleFormControlSelect1">ADULTS</label>
-									<select class="form-control" id="exampleFormControlSelect1">
-										<option>1 adult</option>
-										<option>2 adults</option>
-										<option>3 adults</option>
-										<option>4 adults</option>
-										<option>5 adults</option>
-										<option>6 adults</option>
-										<option>7 adults</option>
-										<option>8 adults</option>
-										<option>9 adults</option>
-										<option>10 adults</option>
-										<option>11 adults</option>
-										<option>12 adults</option>
-										<option>13 adults</option>
-										<option>14 adults</option>
-										<option>15 adults</option>
-										<option>16 adults</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6 pe-0 br0">
-								<div class="form-group">
-									<label class="mb-0" for="exampleFormControlSelect2">CHILDREN</label>
-									<select class="form-control" id="exampleFormControlSelect2">
-										<option>0 children</option>
-										<option>1 child</option>
-										<option>2 children</option>
-										<option>3 children</option>
-										<option>4 children</option>
-										<option>5 children</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</form>
-					<a href="#" class="btn btn-block" id="card-search">Search</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="container-fluid">
-			<div class="row">
-				<!--LeftBar-->
-				<div class="col-md-3 col-lg-2 p-4 bg-light border">
-					<div class="row">
-						<div class="h5 text-uppercase col-md-9">
-							Filter By 
-						</div>
-						<div class="justify-content-end col-md-3" >
-							<i class="bi bi-sliders"></i>
-						</div>
-					</div>
-					<hr class="divider">
-					<h5>Price Range</h5>
-					<div class="row">
-						<div class="input-group input-group-sm mb-3 form-group">
-							<span class="input-group-text" id="inputGroup-sizing-sm">$</span>
-							<input type="number" class="form-control" min="30" max="999" value="30" id="minPrice">
-							<span>-</span>
-							<span class="input-group-text" id="inputGroup-sizing-sm">$</span>
-							<input type="number" class="form-control" min="31" max="1000" value="1000" id="maxPrice">
-						</div>
-					</div>
-					<hr class="divider">
-					<h5>Type of Place</h5>
-					<div class="row px-3">
-						<div class="form-check form-group">
-							<input class="form-check-input" type="checkbox" value="entire-place" id="entire-place">
-							<label class="form-check-label" for="entire-place">
-								Entire Place
-							</label>
-						</div>
-						<div class="form-check form-group">
-							<input class="form-check-input" type="checkbox" value="private-room" id="private-room">
-							<label class="form-check-label" for="private-room">
-								Private Room
-							</label>
-						</div>
-						<div class="form-check form-group">
-							<input class="form-check-input" type="checkbox" value="shared-room" id="shared-room">
-							<label class="form-check-label" for="shared-room">
-								Shared Room
-							</label>
-						</div>
-					</div>
-					<hr class="divider">
-					<h5>Rooms and beds</h5>
-					<div class="row">
-						<div class="bedrooms px-4 pt-3">
-							<h6>Bedrooms</h6>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount1"
-									value="option1">
-								<label class="form-check-label" for="BedroomCount1">1</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount2"
-									value="option2">
-								<label class="form-check-label" for="BedroomCount2">2</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount3"
-									value="option3">
-								<label class="form-check-label" for="BedroomCount3">3</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount4"
-									value="option4">
-								<label class="form-check-label" for="BedroomCount4">4</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount5"
-									value="option5">
-								<label class="form-check-label" for="BedroomCount5">5</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount6"
-									value="option6">
-								<label class="form-check-label" for="BedroomCount6">6</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount7"
-									value="option7">
-								<label class="form-check-label" for="BedroomCount7">7</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="BedroomCount8"
-									value="option8">
-								<label class="form-check-label" for="BedroomCount8">8+</label>
-							</div>
-						</div>
-						<div class="beds px-4 pt-3">
-							<h6>Beds</h6>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount1"
-									value="option1">
-								<label class="form-check-label" for="bedcount1">1</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount2"
-									value="option2">
-								<label class="form-check-label" for="bedcount2">2</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount3"
-									value="option3">
-								<label class="form-check-label" for="bedcount3">3</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount4"
-									value="option4">
-								<label class="form-check-label" for="bedcount4">4</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount5"
-									value="option5">
-								<label class="form-check-label" for="bedcount5">5</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount6"
-									value="option6">
-								<label class="form-check-label" for="bedcount6">6</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount7"
-									value="option7">
-								<label class="form-check-label" for="bedcount7">7</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bedcount8"
-									value="option8">
-								<label class="form-check-label" for="bedcount8">8+</label>
-							</div>
-						</div>
-						<div class="bathrooms px-4 pt-3">
-							<h6>Bathrooms</h6>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom1"
-									value="option1">
-								<label class="form-check-label" for="bathroom1">1</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom2"
-									value="option2">
-								<label class="form-check-label" for="bathroom2">2</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom3"
-									value="option3">
-								<label class="form-check-label" for="bathroom3">3</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom4"
-									value="option4">
-								<label class="form-check-label" for="bathroom4">4</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom5"
-									value="option5">
-								<label class="form-check-label" for="bathroom5">5</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom6"
-									value="option6">
-								<label class="form-check-label" for="bathroom6">6</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom7"
-									value="option7">
-								<label class="form-check-label" for="bathroom7">7</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bathroom8"
-									value="option8">
-								<label class="form-check-label" for="bathroom8">8+</label>
-							</div>
-						</div>
-					</div>
-					<hr class="divider">
-				</div>
-				<div class="col-md-9 col-lg-10">
-					<!--City Corousel-->
-					<div class="row container-fluid py-3 mt-4">
-						<h2 class="h3">City</h2>
-						<div class="row mt-4 justify-content-center">
-							<div id="cityCarousel" class="carousel slide" data-bs-ride="carousel">
-								<div class="carousel-inner" role="listbox">
-									<div class="carousel-item active">
-										<div class="col-md-3">
-											<div class="card-city border-0">
-												<div class="card-img">
-													<img src="img/city-thumbnails/austin.jpeg" class="img-fluid card-img-top rounded" alt="Austin">
-												</div>
-												<div class="card-body">
-													<a href="#">
-														<h5 class="card-title">Austin</h5>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<div class="col-md-3">
-											<div class="card-city border-0">
-												<div class="card-img">
-													<img src="img/city-thumbnails/chicago.jpeg" class="img-fluid card-img-top rounded" alt="Chicago">
-												</div>
-												<div class="card-body">
-													<a href="#">
-														<h5 class="card-title">Chicago</h5>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<div class="col-md-3">
-											<div class="card-city border-0">
-												<div class="card-img">
-													<img src="img/city-thumbnails/denver.jpeg" class="img-fluid card-img-top rounded" alt="Denver">
-												</div>
-												<div class="card-body">
-													<a href="#">
-														<h5 class="card-title">Denver</h5>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<div class="col-md-3">
-											<div class="card-city border-0">
-												<div class="card-img">
-													<img src="img/city-thumbnails/NewYork.jpeg" class="img-fluid card-img-top rounded" alt="New York">
-												</div>
-												<div class="card-body">
-													<a href="#">
-														<h5 class="card-title">New York</h5>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<div class="col-md-3">
-											<div class="card-city border-0">
-												<div class="card-img">
-													<img src="img/city-thumbnails/SanFrancisco.webp" class="img-fluid card-img-top rounded" alt="San Francisco">
-												</div>
-												<div class="card-body">
-													<a href="#">
-														<h5 class="card-title">San Francisco</h5>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="carousel-item">
-										<div class="col-md-3">
-											<div class="card-city border-0">
-												<div class="card-img">
-													<img src="img/city-thumbnails/seattle.jpeg" class="img-fluid card-img-top rounded" alt="Seattle">
-												</div>
-												<div class="card-body">
-													<a class="cityanchor" href="#">
-														<h5 class="card-title">Seattle</h5>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a class="carousel-control-prev bg-dark w-aut" href="#cityCarousel" role="button"
-									data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								</a>
-								<a class="carousel-control-next bg-dark w-aut" href="#cityCarousel" role="button"
-									data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!--Reviews-->
-					<div class=" row container-fluid py-3 mt-4">
-						<h2 class="h3">What Our Guests Have To Say</h2>
-						<div class="row mt-4">
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/review-pics/review4.jpg" class="card-img-top rounded" alt="...">
-									<div class="card-body pl-0">
-										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-										<p class="card-text">Hosting my home allowed me to become an entrepreneur and laid down a path to financial freedom.</p>
-										<div class="">
-											<div class="d-flex">
-												<img src="img/user-thumbnails/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-												<div class="d-flex flex-column py-2 px-4">
-													<h5 class="mt-0 mb-1">Sara</h5>
-													<p>United States</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/review-pics/review2.jpeg" class="card-img-top rounded" alt="...">
-									<div class="card-body pl-0">
-										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-										<p class="card-text">After carefully searching for two weeks, I finally decided on an "milesNstay" to book for a month, while I was new to the Los Angeles area. It was a decent commute for me, and the price was good. Most importantly, it allowed pets.</p>
-										<div class="">
-											<div class="d-flex">
-												<img src="img/user-thumbnails/user3.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-												<div class="d-flex flex-column py-2 px-4">
-													<h5 class="mt-0 mb-1">Jacob</h5>
-													<p>United States</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/review-pics/review3.jpeg" class="card-img-top rounded" alt="...">
-									<div class="card-body pl-0">
-										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-										<p class="card-text">The property is absolutely clean and stylish. It is exactly the same as shown in the pictures and within walking distances to various attractions.</p>
-										<div class="">
-											<div class="d-flex">
-												<img src="img/user-thumbnails/user2.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-												<div class="d-flex flex-column py-2 px-4">
-													<h5 class="mt-0 mb-1">Lily</h5>
-													<p>South Korea</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/review-pics/review1.jpeg" class="card-img-top rounded" alt="...">
-									<div class="card-body pl-0">
-										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
-										<p class="card-text">Pictures on the internet do not do this property justice wow factor. Location was fab. Quiet but close to shops parks and train station. Very comfortable would definitely recommend.</p>
-										<div class="">
-											<div class="d-flex">
-												<img src="img/user-thumbnails/user4.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
-												<div class="d-flex flex-column py-2 px-4">
-													<h5 class="mt-0 mb-1">Gabriel</h5>
-													<p>Costa Rica</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Just booked near you -->
-					<div class="row container-fluid py-3 mt-4">
-						<h2 class="h3">Just Booked Near You</h2>
-						<div class="row mt-4">
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/property-thumbnails/jbnu1.jpeg" class="card-img-top rounded" alt="...">
-									<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
-									<div class="card-body p-0">
-										<h5 class="card-title">The Joshua Tree House</h5>
-										<p class="card-text m-0">$290/night</p>
-										<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
-												class="text-secondary"> 465, Verified Host</span></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/property-thumbnails/jbnu2.jpeg" class="card-img-top rounded" alt="...">
-									<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
-									<div class="card-body p-0">
-										<h5 class="card-title">Mushroom Dome Cabin</h5>
-										<p class="card-text m-0">$130/night</p>
-										<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
-												class="text-secondary"> 1383, Verified Host</span></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/property-thumbnails/jbnu3.jpeg" class="card-img-top rounded" alt="...">
-									<p class="small text-uppercase pb-0">Earth House, Orondo</p>
-									<div class="card-body p-0">
-										<h5 class="card-title">Underground Hygge</h5>
-										<p class="card-text m-0">$150/night</p>
-										<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
-												class="text-secondary"> 544, Verified Host</span></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card-mb-3 border-0">
-									<img src="img/property-thumbnails/jbnu4.jpg" class="card-img-top rounded" alt="...">
-									<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
-									<div class="card-body p-0">
-										<h5 class="card-title">Mushroom Dome Cabin</h5>
-										<p class="card-text m-0">$130/night</p>
-										<p class="small m-0 blue" >&#9733;&#9733;&#9733;&#9733;&#9733;<span
-												class="text-secondary"> 1383, Verified Host</span></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row mt-2 mb-5">
-							<button class="btn  btn-link" id="show-more-btn">
-								<a class="blue">Show all(22,000+)&gt;&gt;</a>
-							</button>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!--Footer-->
-		<footer class="py-2 bg-dark">
-			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-				<li class="nav-item">
-					<a href="#" class="nav-link">Contact Us</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">About Us</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Careers</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">FAQs</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Terms and Conditions</a>
-				</li>
-			</ul>
-			<p class="text-center">© 2022 MilesNStay, Inc</p>
-		</footer>
-		
-		<script>
-			let items = document.querySelectorAll('.carousel .carousel-item')
+	<!--Footer-->
+	<footer class="py-2 bg-dark">
+		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+			<li class="nav-item">
+				<a href="#" class="nav-link">Contact Us</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Careers</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">FAQs</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Terms and Conditions</a>
+			</li>
+		</ul>
+		<p class="text-center">© 2022 MilesNStay, Inc</p>
+	</footer>
 
-			items.forEach((el) => {
-				const minPerSlide = 4
-				let next = el.nextElementSibling
-				for (var i = 1; i < minPerSlide; i++) {
-					if (!next) {
-						next = items[0]
-					}
-					let cloneChild = next.cloneNode(true)
-					el.appendChild(cloneChild.children[0])
-					next = next.nextElementSibling
+	<script>
+		let items = document.querySelectorAll('.carousel .carousel-item')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i = 1; i < minPerSlide; i++) {
+				if (!next) {
+					next = items[0]
 				}
-			})
-		</script>
-	</body>
+				let cloneChild = next.cloneNode(true)
+				el.appendChild(cloneChild.children[0])
+				next = next.nextElementSibling
+			}
+		})
+	</script>
+</body>
+
 </html>

@@ -18,9 +18,9 @@ a:hover{
 	margin: 0 auto;
 	float: none;
 	margin-bottom: 0px;
-	top: 35%;
+	top: 15%;
 	opacity: .8;
-	width: 90%;
+	width: 80%;
 	padding: 10px;
 }
 
@@ -41,6 +41,10 @@ a:hover{
 .logo-div {
 	opacity: 100%;
 }
+
+.logo-div img {
+	width: 30%;
+} 
 
 #card-search {
 	background-color: #f58b5d;
@@ -211,10 +215,9 @@ input .carousel-inner {
 	max-height: 100%;
 }
 
-@media (min-width: 991px) {
-	.card {
-		width: 30%
-	}
+.img-fluidX {
+	width: 10vh;
+	height: 10vh;
 }
 
 @media (max-width: 767px) {
@@ -233,6 +236,12 @@ input .carousel-inner {
 	#navbarsearch {
 		display: none;
 	}
+
+	#navbarmenu {
+		display: block !important;
+		top: 0 !important;
+	}
+
 }
 
 .carousel-inner .carousel-item.active,
@@ -241,8 +250,24 @@ input .carousel-inner {
 	display: flex;
 }
 
+@media (min-width: 575px){
+  .logo-div img{
+    width: 500% ;
+  }
+}
+
+@media (min-width: 900px){
+  .logo-div img{
+    width: 200% ;
+  }
+} 
 
 @media (min-width: 768px) {
+	.card {
+		width: 30%;
+		top: 35%;
+	}
+
 	.carousel-inner .carousel-item-end.active,
 	.carousel-inner .carousel-item-next {
 		transform: translateX(25%);
