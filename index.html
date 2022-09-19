@@ -4,47 +4,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>milesNstay</title>
+		<title>Miles'N'Stay</title>
 
 		<!-- CSS Files -->
 		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 			integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-		<!-- Javacript Files  -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="styles.css">
-		<style>
-			.navbar-fixed-top {
-				top: -70px;
-				opacity: 0;
-			}
-
-			@media (min-width: 768px) {
-				.carousel-inner .carousel-item-end.active,
-				.carousel-inner .carousel-item-next {
-					transform: translateX(25%);
-				}
-
-				.carousel-inner .carousel-item-start.active,
-				.carousel-inner .carousel-item-prev {
-					transform: translateX(-25%);
-				}
-			}
-
-			.carousel-inner .carousel-item-end,
-			.carousel-inner .carousel-item-start {
-				transform: translateX(0);
-			}
-
-			.logo-div-main{
-				width:80%;
-				padding-bottom:1%;
-				padding-top: 1%;
-
-			}
-		</style>
 
 		<!-- Javacript Files  -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -66,7 +35,7 @@
 			<form class="search" >
 				<div class="col-md-1 d-flex flex-wrap align-items-center" id="searchlogo">
 					<a class="navbar-brand" href="index.html">
-						<img src="img/logo2.png" alt="" width="150%">
+						<img src="img/logo.png" alt="" width="150%">
 					</a>
 				</div>
 				<div class="row col-md-9 px-5" >
@@ -145,11 +114,11 @@
 		</div>
 
 		<!-- Navigation -->
-		<nav class="bg-dark navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3 py-3 row" id='navbarmenu'>
+		<nav class="navbar navbar-expand-md navbar-light navbar-togglable fixed-top px-3 py-3 row" id='navbarmenu'>
 			<!-- Logo -->
 			<div class="logo-div col-sm-1">
 				<a class="navbar-brand" href="index.html">
-					<img src="img/logo2.png" alt="" width="200%">
+					<img src="img/logo.png" alt="" width="200%">
 				</a>
 			</div>
 			<!-- Collapse -->
@@ -203,7 +172,7 @@
 							<div class="col-md-6 px-0 br0">
 								<div class="form-group">
 									<label class="mb-0" for="exampleFormControlSelect1">ADULTS</label>
-									<select class="form-control br0" id="exampleFormControlSelect1">
+									<select class="form-control" id="exampleFormControlSelect1">
 										<option>1 adult</option>
 										<option>2 adults</option>
 										<option>3 adults</option>
@@ -226,7 +195,7 @@
 							<div class="col-md-6 pe-0 br0">
 								<div class="form-group">
 									<label class="mb-0" for="exampleFormControlSelect2">CHILDREN</label>
-									<select class="form-control br0" id="exampleFormControlSelect2">
+									<select class="form-control" id="exampleFormControlSelect2">
 										<option>0 children</option>
 										<option>1 child</option>
 										<option>2 children</option>
@@ -434,7 +403,7 @@
 										<div class="col-md-3">
 											<div class="card-city border-0">
 												<div class="card-img">
-													<img src="img/austin.jpeg" class="img-fluid card-img-top rounded" alt="Austin">
+													<img src="img/city-thumbnails/austin.jpeg" class="img-fluid card-img-top rounded" alt="Austin">
 												</div>
 												<div class="card-body">
 													<a href="#">
@@ -448,7 +417,7 @@
 										<div class="col-md-3">
 											<div class="card-city border-0">
 												<div class="card-img">
-													<img src="img/chicago.jpeg" class="img-fluid card-img-top rounded" alt="Chicago">
+													<img src="img/city-thumbnails/chicago.jpeg" class="img-fluid card-img-top rounded" alt="Chicago">
 												</div>
 												<div class="card-body">
 													<a href="#">
@@ -462,7 +431,7 @@
 										<div class="col-md-3">
 											<div class="card-city border-0">
 												<div class="card-img">
-													<img src="img/denver.jpeg" class="img-fluid card-img-top rounded" alt="Denver">
+													<img src="img/city-thumbnails/denver.jpeg" class="img-fluid card-img-top rounded" alt="Denver">
 												</div>
 												<div class="card-body">
 													<a href="#">
@@ -476,7 +445,7 @@
 										<div class="col-md-3">
 											<div class="card-city border-0">
 												<div class="card-img">
-													<img src="img/NewYork.jpeg" class="img-fluid card-img-top rounded" alt="New York">
+													<img src="img/city-thumbnails/NewYork.jpeg" class="img-fluid card-img-top rounded" alt="New York">
 												</div>
 												<div class="card-body">
 													<a href="#">
@@ -490,7 +459,7 @@
 										<div class="col-md-3">
 											<div class="card-city border-0">
 												<div class="card-img">
-													<img src="img/SanFrancisco.webp" class="img-fluid card-img-top rounded" alt="San Francisco">
+													<img src="img/city-thumbnails/SanFrancisco.webp" class="img-fluid card-img-top rounded" alt="San Francisco">
 												</div>
 												<div class="card-body">
 													<a href="#">
@@ -504,7 +473,7 @@
 										<div class="col-md-3">
 											<div class="card-city border-0">
 												<div class="card-img">
-													<img src="img/seattle.jpeg" class="img-fluid card-img-top rounded" alt="Seattle">
+													<img src="img/city-thumbnails/seattle.jpeg" class="img-fluid card-img-top rounded" alt="Seattle">
 												</div>
 												<div class="card-body">
 													<a class="cityanchor" href="#">
@@ -532,13 +501,13 @@
 						<div class="row mt-4">
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/review1.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/review-pics/review4.jpg" class="card-img-top rounded" alt="...">
 									<div class="card-body pl-0">
 										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
 										<p class="card-text">Hosting my home allowed me to become an entrepreneur and laid down a path to financial freedom.</p>
 										<div class="">
 											<div class="d-flex">
-												<img src="img/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+												<img src="img/user-thumbnails/user1.jpg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
 												<div class="d-flex flex-column py-2 px-4">
 													<h5 class="mt-0 mb-1">Sara</h5>
 													<p>United States</p>
@@ -550,13 +519,13 @@
 							</div>
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/review2.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/review-pics/review2.jpeg" class="card-img-top rounded" alt="...">
 									<div class="card-body pl-0">
 										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
 										<p class="card-text">After carefully searching for two weeks, I finally decided on an "milesNstay" to book for a month, while I was new to the Los Angeles area. It was a decent commute for me, and the price was good. Most importantly, it allowed pets.</p>
 										<div class="">
 											<div class="d-flex">
-												<img src="img/user3.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+												<img src="img/user-thumbnails/user3.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
 												<div class="d-flex flex-column py-2 px-4">
 													<h5 class="mt-0 mb-1">Jacob</h5>
 													<p>United States</p>
@@ -568,16 +537,16 @@
 							</div>
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/review3.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/review-pics/review3.jpeg" class="card-img-top rounded" alt="...">
 									<div class="card-body pl-0">
 										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
 										<p class="card-text">The property is absolutely clean and stylish. It is exactly the same as shown in the pictures and within walking distances to various attractions.</p>
 										<div class="">
 											<div class="d-flex">
-												<img src="img/user2.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+												<img src="img/user-thumbnails/user2.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
 												<div class="d-flex flex-column py-2 px-4">
 													<h5 class="mt-0 mb-1">Lily</h5>
-													<p>United States</p>
+													<p>South Korea</p>
 												</div>
 											</div>
 										</div>
@@ -586,16 +555,16 @@
 							</div>
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/review3.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/review-pics/review1.jpeg" class="card-img-top rounded" alt="...">
 									<div class="card-body pl-0">
 										<h5 class="orange">&#9733; &#9733; &#9733; &#9733; &#9733;</h5>
 										<p class="card-text">Pictures on the internet do not do this property justice wow factor. Location was fab. Quiet but close to shops parks and train station. Very comfortable would definitely recommend.</p>
 										<div class="">
 											<div class="d-flex">
-												<img src="img/user4.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
+												<img src="img/user-thumbnails/user4.jpeg" class="ml-0 mr-2 img-fluidX rounded-circle w-25 mb-2" alt="...">
 												<div class="d-flex flex-column py-2 px-4">
-													<h5 class="mt-0 mb-1">John</h5>
-													<p>United States</p>
+													<h5 class="mt-0 mb-1">Gabriel</h5>
+													<p>Costa Rica</p>
 												</div>
 											</div>
 										</div>
@@ -610,56 +579,56 @@
 						<div class="row mt-4">
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/jbnu1.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/property-thumbnails/jbnu1.jpeg" class="card-img-top rounded" alt="...">
 									<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
 									<div class="card-body p-0">
 										<h5 class="card-title">The Joshua Tree House</h5>
 										<p class="card-text m-0">$290/night</p>
-										<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+										<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
 												class="text-secondary"> 465, Verified Host</span></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/jbnu2.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/property-thumbnails/jbnu2.jpeg" class="card-img-top rounded" alt="...">
 									<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
 									<div class="card-body p-0">
 										<h5 class="card-title">Mushroom Dome Cabin</h5>
 										<p class="card-text m-0">$130/night</p>
-										<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+										<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
 												class="text-secondary"> 1383, Verified Host</span></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/jbnu3.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/property-thumbnails/jbnu3.jpeg" class="card-img-top rounded" alt="...">
 									<p class="small text-uppercase pb-0">Earth House, Orondo</p>
 									<div class="card-body p-0">
 										<h5 class="card-title">Underground Hygge</h5>
 										<p class="card-text m-0">$150/night</p>
-										<p class="small m-0 text-info">&#9733;&#9733;&#9733;&#9733;&#9733;<span
+										<p class="small m-0 blue">&#9733;&#9733;&#9733;&#9733;&#9733;<span
 												class="text-secondary"> 544, Verified Host</span></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-3">
 								<div class="card-mb-3 border-0">
-									<img src="img/jbnu2.jpeg" class="card-img-top rounded" alt="...">
+									<img src="img/property-thumbnails/jbnu4.jpg" class="card-img-top rounded" alt="...">
 									<p class="small text-uppercase pb-0">Entire house, Joshua Tree</p>
 									<div class="card-body p-0">
 										<h5 class="card-title">Mushroom Dome Cabin</h5>
 										<p class="card-text m-0">$130/night</p>
-										<p class="small m-0 text-info" >&#9733;&#9733;&#9733;&#9733;&#9733;<span
+										<p class="small m-0 blue" >&#9733;&#9733;&#9733;&#9733;&#9733;<span
 												class="text-secondary"> 1383, Verified Host</span></p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row mt-2 mb-5">
-							<button class="btn text-info btn-link" id="show-more-btn">
-								<span class="h6">Show all(22,000+) &gt;</span>
+							<button class="btn  btn-link" id="show-more-btn">
+								<a class="blue">Show all(22,000+)&gt;&gt;</a>
 							</button>
 						</div>
 					</div>
